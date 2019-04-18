@@ -5,6 +5,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import indigo from '@material-ui/core/colors/indigo'
 import pink from '@material-ui/core/colors/pink'
 import red from '@material-ui/core/colors/red'
+import Events from './Events'
 import Header from './Header'
 
 const theme = createMuiTheme({
@@ -19,6 +20,8 @@ const theme = createMuiTheme({
 
 const App = () => {
   return (
+
+
     <React.Fragment>
       <Header />
       <Grid item xs={6}>
@@ -28,6 +31,7 @@ const App = () => {
 
       </Grid>
     </React.Fragment>
+
   )
 }
 
