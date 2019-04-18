@@ -5,6 +5,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import indigo from '@material-ui/core/colors/indigo'
 import pink from '@material-ui/core/colors/pink'
 import red from '@material-ui/core/colors/red'
+import Header from './Header'
 
 const theme = createMuiTheme({
   palette: {
@@ -18,16 +19,15 @@ const theme = createMuiTheme({
 
 const App = () => {
   return (
-    <Grid
-      container
-      direction="row"
-      justify="space-evenly"
-      alignitems="center"
-    >
-      <Typography component="h2" variant="h1" gutterBottom>
-        <h1>Bad Friday</h1>
-      </Typography>
-    </Grid>
+    <React.Fragment>
+      <Header />
+      <Grid item xs={6}>
+
+      </Grid>
+      <Grid item xs={6}>
+
+      </Grid>
+    </React.Fragment>
   )
 }
 
