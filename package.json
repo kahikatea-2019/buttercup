@@ -29,6 +29,7 @@
     ]
   },
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
     "express": "^4.16.4",
     "superagent": "^5.0.2"
   },
