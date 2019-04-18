@@ -25,6 +25,9 @@ const url = 'http://api.eventfinda.co.nz/v/events.json'
 export function getEvents () {
   return request
     .get(url)
-    .set('Authorization')
-    .then()
+    .set('Authorization', username)
+    .set('Basic', password)
+    .then(res => {
+      console.log(res)
+    })
 }
