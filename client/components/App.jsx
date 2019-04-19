@@ -1,12 +1,12 @@
 import React from 'react'
-import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import { createMuiTheme } from '@material-ui/core/styles'
 import indigo from '@material-ui/core/colors/indigo'
 import pink from '@material-ui/core/colors/pink'
 import red from '@material-ui/core/colors/red'
-import Events from './Events'
 import Header from './Header'
+import TestComponent from './TestComponent'
+import Weather from './Weather'
 
 const theme = createMuiTheme({
   palette: {
@@ -20,18 +20,18 @@ const theme = createMuiTheme({
 
 const App = () => {
   return (
-
-
     <React.Fragment>
       <Header />
-      <Grid item xs={6}>
+      <Grid container spacing={24}>
+        <Grid item xs={12} sm={6}>
+          <TestComponent />
 
-      </Grid>
-      <Grid item xs={6}>
-
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Weather />
+        </Grid>
       </Grid>
     </React.Fragment>
-
   )
 }
 
