@@ -7,6 +7,7 @@ import red from '@material-ui/core/colors/red'
 import Header from './Header'
 import TestComponent from './TestComponent'
 import Weather from './Weather'
+import Football from './Football'
 
 const theme = createMuiTheme({
   palette: {
@@ -31,6 +32,7 @@ const App = () => {
           <Weather />
         </Grid>
       </Grid>
+      <Football />
     </React.Fragment>
   )
 }
