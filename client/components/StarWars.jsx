@@ -17,7 +17,7 @@ export default class OverWatch extends React.Component {
     return (
       <div>
         <Typography component="h4" variant="h4" gutterBottom>
-          <p>{this.state.name} is having a sick time this easter.</p>
+          <h1>{this.state.name} is having a sick time this easter.</h1>
           <p>I want {this.state.model} in my easter egg</p>
         </Typography>
       </div>

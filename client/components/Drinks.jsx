@@ -1,5 +1,6 @@
 import React from 'react'
 import { getDrinks } from '../api/Drinks'
+import Typography from '@material-ui/core/Typography'
 
 export default class Drinks extends React.Component {
   state = {}
@@ -15,7 +16,10 @@ export default class Drinks extends React.Component {
   render () {
     return (
       <div>
-        <p>{this.state.name}</p>
+        <Typography component="h1" variant="h1" gutterBottom>
+        <h2> John likes: </h2>
+        <h1>{this.state.name}s</h1>
+        </Typography>
       </div>
     )
   }

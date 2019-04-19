@@ -6,6 +6,8 @@ import pink from '@material-ui/core/colors/pink'
 import red from '@material-ui/core/colors/red'
 import Header from './Header'
 import TestComponent from './TestComponent'
+import StarWars from './StarWars'
+import Drinks from './Drinks'
 import Weather from './Weather'
 
 const theme = createMuiTheme({
@@ -24,8 +26,15 @@ const App = () => {
       <Header />
       <Grid container spacing={24}>
         <Grid item xs={12} sm={6}>
+          <Drinks />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <StarWars />
+        </Grid>
+      </Grid>
+      <Grid container spacing={24}>
+        <Grid item xs={12} sm={6}>
           <TestComponent />
-
         </Grid>
         <Grid item xs={12} sm={6}>
           <Weather />
